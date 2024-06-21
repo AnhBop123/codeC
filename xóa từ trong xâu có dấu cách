@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
+int main(){
+char c[1000];
+gets(c);
+char w[20];
+scanf("%s", w);
+char *token=strtok(c, " ");
+while(token!=NULL){
+    if(strcmp(token, w)!=0){
+      printf("%s ", token);
+    }
+    token=strtok(NULL, " ");
+  }
+}
