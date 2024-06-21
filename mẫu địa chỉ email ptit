@@ -12,7 +12,7 @@ int t;
 scanf("%d", &t);
 getchar();
 while(t--){
-  char[1000];
+  char c[1000];
   fgets(c, sizeof(c), stdin);
   c[strcspn(c,"\n")]='\0';
   tolowercase(c);
